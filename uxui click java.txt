@@ -1,0 +1,40 @@
+일단 uxui의 페이지 높이를 높여준다음. back을 fixed로,,?
+ uxui 높이 300vh; position: relative;
+
+만약 body의 페이지 높이를 높여주면 어떻게 수정해야하나? 
+
+window.addEventListener('scroll', () => {
+	console.log(window.pageYOffset);
+});
+
+
+height값이 계속 0으로 뜬다.
+body값을 300vh로 해주고 = height값 적용됨
+
+header === position = fixed; 로 해주고 === 화면에 맞게 위아래로 달라붙음. 
+main identity에 img, footer === position = fixed;
+
+
+
+지금 문제점.
+uxui에 scroll이벤트 걸어주면 안먹음
+wheel이벤트 걸어주면 먹긴먹는데 pageYOffset 혹은 scrollY가 undefined로 뜬다.
+
+scroll이 안먹는 이유가 undefined랑 관련있는 것 같은데,,
+
+uxuiElem.addEventListener('wheel', (e) => {
+                console.log(e = window.pageYOffset);
+            });
+
+이렇게 하면 pageYOffset값이 나온다. css와 달리 값이 할당이 안되어 있나봄.
+
+ window.addEventListener('scroll', (e) => {
+                console.log(e = window.pageYOffset);
+            });
+
+이렇게 하면 스크롤 이벤트 값이 뜨긴 뜬다. 
+e.pageYOffset하면 안되고 e = window.pageYOffset해야 뜬다.
+
+transform -> translateX(-100~px); 로 해줘야지 움직인다.
+이때 스크롤의 비율에 맞춰서 해줘야하나(?)
+

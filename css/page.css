@@ -1,0 +1,46 @@
+.anima{
+    position: fixed;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    transform: translateY(-100vh);
+    transition: 0.5s 0.1s;
+}
+.anima .first {
+    position: fixed;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(255, 255, 255);
+    transform: translateY(-100vh);
+    transition: 0.5s 0.3s;
+    
+}
+.anima .last {
+    position: fixed;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background-color: yellow;
+    transform: translateY(-100vh);
+    transition: 0.6s 0.4s;
+    
+}
+.anima.active,
+.anima.active .first,
+.anima.active .last {
+    transform: translateY(0);
+}
+
+.anima.active .tascoPage {
+    transform: translateY(0vh);
+}
+
+.anima .tascoPage {
+    position: fixed;
+    width: 100vw;
+    height: 400vh;
+    overflow-y: scroll;
+    transition: 0.8s;
+    background: linear-gradient(to top, red, orange);
+}

@@ -1,0 +1,22 @@
+-> 메뉴를 클릭했을때 메뉴 페이지 나오도록.
+    -  버튼 클릭하면 페이지로드 -> 클릭이벤트(클릭했을때 display: none을 block으로 바꾸기, 부드럽게, 트랜지션.)
+    -  검은 바탕 클릭하면 밖으로 빠져나가도록.
+
+강의 2시 15분경
+오류 확인함. display none, block으로 했을때 transition 안먹는다.
+
+let menuElems;
+
+function setElems() {
+	menuElems = document.querSelector('.menu');
+}
+
+
+
+window.addEventListener('load', () => {
+	menuElems();
+	
+});
+
+cover panel에 active가 붙으면 버튼에 opacity 1 transform: 이동.
+menu에 active가 붙으면 menu버튼에 opacity 1

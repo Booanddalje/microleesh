@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>microleesh</title>
+    <!-- 
+        작성해야할 css
+        1. reset 파일
+        2. maindesign 파일 - 이름 microleesh.css로 작성하기 
+    -->
+    <link rel="stylesheet" href="./css/m_default.css">
+    <link rel="stylesheet" href="./css/microleesh.css">
+    <link rel="stylesheet" href="./css/page.css">
+    <script src="./js/match2.js"></script>
+    <script type="module" src="./js/main.js"></script>
+</head>
+
+<body>
+    <!--
+          체크리스트
+          1. html, css 유효성, 최적화 검사.
+          2. hide - 접근성 준수했는가.
+          3. 호환성()
+        -->
+    <div class="container">
+        <h1 class="hide">이상현 포트폴리오 페이지</h1>
+        <header>
+            <h2 class="hide">포트폴리오 상단 메뉴</h2>
+            <nav class="header-nav">
+                <ul class="header-nav-links clear">
+                    <li class="header-nav-item pc"><a href="#" data-link = "0">WORK</a></li>
+                    <li class="header-nav-item mobile"><a href="#" data-link = "1">MENU</a></li>
+                    <li class="header-nav-item"><a href="#" data-link="2">IDENTITY</a></li>
+                    <li class="header-nav-item"><a href="#" data-link="3">MAIL</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="menu mobile">
+            <h2 class="hide">portfolio 메뉴</h2>
+            <div class="back">
+                    <h3><a href="#">MENU</a></h3>
+                    <ul class="main-nav-links">
+                        <li class="main-nav-item"><a href="#" data-menu = "uxui">UX UI</a></li>
+                        <li class="main-nav-item"><a href="#" data-menu = "branding">BRANDING</a></li>
+                        <li class="main-nav-item"><a href="#" data-menu = "study">STUDY</a></li>
+                        <li class="main-nav-item"><a href="#" data-menu = "self">Lee<br>Sang Hyeon<span>Self-Introduction</span></a></li>
+                    </ul>
+            </div>
+        </div><!-- menu click 했을때 768, mobile에서만 보이게 -->
+
+        <div class="identity">
+            <h2 class="hide">identity 소개글</h2>
+            <div class="back">
+                <h3><a href="#">IDENTITY</a></h3>
+                <strong>Microscope</strong>
+                <p>빛의 삼원색인 RGB와 잉크의 네가지 색인 CMYK <br>화이트와 블랙. 단순해 보이는 이 색상들은 알고 보면 다양한 색의 혼합입니다. <br>무채색 안에 모여있는 다양한 색을 볼
+                    수 있는 현미경과 눈동자를 형상화했습니다. <br><br>대상을 바라볼 때 자세하게 그것의 색과 아름다움을 <br>찾을 수 있는 디자이너라는 뜻을 담고 있습니다.</p>
+            </div>
+        </div><!-- identity 클릭했을때-->
+
+        <div class="uxui" data-main="false">
+            <h2 class="hide">uxui</h2>
+            <div class="back">
+                <h3><a href="#">MENU</a></h3>
+                <h3><a href="#">WORK</a></h3>
+                <strong>UX UI</strong>
+                <div class="list-container">
+                    <a href="#" class="list-box">
+                        <div>
+                            <h4>disney</h4>
+                        </div>
+                    </a>
+                    <a href="#" class="list-box">
+                        <div>
+                            <h4>disney</h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div><!-- ux ui -->
+
+        <div class="branding" data-main="false">
+            <h2 class="hide">branding</h2>
+            <div class="back">
+                <h3><a href="#">MENU</a></h3>
+                <h3><a href="#">WORK</a></h3>
+                <strong>BRANDING</strong>
+                <div class="list-container2">
+                    <div class="list-box">
+                        <div>
+                            <h4 class="hide">SCK</h4>
+                        </div>
+                    </div>
+                    <div class="list-box">
+                        <div>
+                            <h4 class="hide">전원공간</h4>
+                        </div>
+                    </div>
+                    <div class="list-box">
+                        <div>
+                            <h4 class="hide">사천도서관</h4>
+                        </div>
+                    </div>
+                    <div class="list-box">
+                        <div>
+                            <h4 class="hide">Dunngun</h4>
+                        </div>
+                    </div>
+                    <div class="list-box">
+                        <div class="tasco">
+                            <h4 class="hide">TASCO</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- branding -->
+
+        <div class="study" data-main="false">
+            <h2 class="hide">study</h2>
+            <div class="back">
+                <h3><a href="#">MENU</a></h3>
+                <h3><a href="#">WORK</a></h3>
+                <strong>STUDY</strong>
+                <div class="list-container">
+                    <a href="#" class="list-box">
+                        <div>
+                            <h4>github</h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div><!-- study -->
+
+        <div class="leesanghyeon" data-main="false">
+            <h2 class="hide">leesanghyeon</h2>
+            <div class="back">
+                <h3><a href="#">MENU</a></h3>
+                <h3><a href="#">이상현</a></h3>
+                <strong>Lee Sang Hyeon</strong>
+                <div class="list-container3">
+                    <a href="#"  class="list-box">
+                        <div>
+                            <h4>이력서 CV</h4>
+                        </div>
+                    </a>
+                    <a href="#"  class="list-box">
+                        <div>
+                            <h4>자기소개서</h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div><!-- sanghyeon -->
+
+        <section class="main-visual">
+            <h2 class="hide">작품 및 자기소개 메뉴</h2>
+            <nav class="main-nav">
+                <ul class="main-nav-links">
+                    <li class="main-nav-item"><a href="#" data-menu="uxui">UX UI</a></li>
+                    <li class="main-nav-item"><a href="#" data-menu="branding">BRANDING</a></li>
+                    <li class="main-nav-item"><a href="#" data-menu="study">STUDY</a></li>
+                    <li class="main-nav-item">
+                        <a href="#" data-menu="self">
+                            <span>Lee</span>
+                            <span>Sang Hyeon</span>
+                            <span>Self-Introduction</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!--a tag div로 감싸야하는지 css 해보고 판단. -->
+            <a href="#" class="main-identity">
+                <span class="hide">개인 아이덴티티 로고</span>
+                <img src="img/microleesh-logo.png" alt="microleeshlogo">
+            </a>
+        </section>
+
+        <footer>
+            <h2 class="hide">하단 페이지 소개글</h2>
+            <div class="footer-indicate">
+                <ul class="footer-indicate-list clear">
+                    <li class="footer-indicate-item">개인 포트폴리오 페이지</li>
+                    <li class="footer-indicate-item">이상현</li>
+                    <li class="footer-indicate-item">©2023</li>
+                </ul>
+            </div>
+        </footer>
+    </div><!-- container -->
+
+  
+   
+    
+</body>
+
+</html>

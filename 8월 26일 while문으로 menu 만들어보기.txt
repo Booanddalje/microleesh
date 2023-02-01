@@ -1,0 +1,22 @@
+let headerLinkElem;
+
+function setElems() {
+	headerLinkElem = document.querySelector('.header-nav');
+}
+
+function clickHandler(e) {
+	let elem = e.target; // 3. 최종적으로 header-nav-item이 붙은 객체가 let elem에 들어가게 된다. 
+	while (!e.classList.contains('header-nav-item')){ // 2. header-nav-item이 나오면 while문에서 빠져나간다.
+		e = e.parentNode; // 1. 부모노드를 할당시켜봄. 자식을 조사했을때 안나오면 부모로 가서 또 조사를 반복하도록
+	}
+}
+
+
+window.addEventListener('load', () => {
+	setElems();
+	
+	headerLinkElem.addEventListener('click', clickHandler);
+
+})
+
+일단 안됨. ㅋ 나중에 다시해보기

@@ -1,0 +1,142 @@
+1024~
+
+work버튼을 누르면 main-visual의 uxui, branding, study가 깜빡거리게 바꾸기.
+(기존에 work누르면 나오는 페이지 삭제하고.)
+
+
+main-visual의 a를 누르면 각 해당하는 페이지가 나오게끔하기.
+
+
+blink이거 말고 animation으로 하자.
+
+
+
+
+header의 work 누르면
+main-visual에  visualMove가 붙으면서 li 1~3가 움직여라.
+
+transition으로 시간차주기.
+
+
+
+워크를 클릭
+
+main-visual의 main-nav-item들을 자바스크립트 배열에 저장하기.
+
+for문을 사용하여
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.work {
+        z-index: 5;
+        display: block;
+        position: fixed;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        height: 100vh;
+        color: #a4a4a4;
+        transform: translateX(-100%);/*-100으로 변경*/
+        transform-origin: left;
+        transition: 0.5s;
+        will-change: transform;
+    }
+    .work.active {
+        transform: translateX(0);
+    }
+    .work h3 {
+        font-family: 'Playfair Display', serif;
+        font-weight: 500;
+        font-size: 1.8rem;
+        opacity: 0;
+        transition: 0.6s 0.5s;
+        position: absolute;
+        width: 90.04%;/*922/1024*100*/
+        height: 66px;
+        left: 50%;
+        transform: translateX(-50%);
+        pointer-events: none;    
+    }
+    .work h3 a {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .work .main-nav {
+        pointer-events: none;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 90.04%;/*922/1024*100*/
+        height: 100vh;
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .work .main-nav-links .main-nav-item:nth-child(1) {
+        margin-bottom: 50px;
+        opacity: 0;
+        transition: 0.8s 1s;
+    }
+    .work .main-nav-links .main-nav-item:nth-child(2) {
+        opacity: 0;
+        transition: 0.8s 1.1s;
+    }
+    .work .main-nav-links .main-nav-item:nth-child(3) {
+        margin-top: 50px;
+        opacity: 0;
+        transition: 0.8s 1.2s;
+    }
+    .work .main-nav-links .main-nav-item a {
+        pointer-events: auto;
+        font-family: 'Playfair Display', serif;
+        font-weight: 600;
+        font-size: 5.2rem;
+        color: #a4a4a4;
+    }
+    
+    .work.active h3,
+    .work.active .main-nav-links .main-nav-item {
+        opacity: 1;
+    }
+
+    /*work close*/
+
+    .work.close .main-nav-links .main-nav-item:nth-child(1) {
+        /* margin-top: 13.814vh; 92px / 666px */
+        opacity: 0;
+        transition-duration: 0.8s;
+        transition-delay: 1s;
+    }
+    .work.close .main-nav-links .main-nav-item:nth-child(2) {
+        /* margin-top: 13.814vh; 92px / 666px */
+        opacity: 0;
+        transition-duration: 0.8s;
+        transition-delay: 1.1s;
+    }
+    .work.close .main-nav-links .main-nav-item:nth-child(3) {
+        /* margin-top: 13.814vh; 92px / 666px */
+        opacity: 0;
+        transition-duration: 0.8s;
+        transition-delay: 1.2s;
+    }
+    .work.close {
+        transition-duration: 0.8s;
+        transition-delay: 1.6s;
+        transform: translateX(-100%);
+    }
