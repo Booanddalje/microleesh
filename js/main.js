@@ -261,7 +261,6 @@ window.addEventListener('load', () => {
                 // anima.classList.remove('active');
                 document.querySelector('.first').remove();
                 document.querySelector('.last').remove();
-                tascoPage.page();
                 clearTimeout(three);
             }, 2500)
             
@@ -273,10 +272,7 @@ window.addEventListener('load', () => {
                 
                 tascoP.style.transform = `translateY(${ - xMove }vh)`;
         
-                anima.addEventListener('click', () => {
-                    window.removeEventListener('scroll', ggg);
-                    tascoPage.pageOff(); 
-                });
+               
             });
 
 

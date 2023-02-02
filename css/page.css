@@ -32,15 +32,3 @@
     transform: translateY(0);
 }
 
-.anima.active .tascoPage {
-    transform: translateY(0vh);
-}
-
-.anima .tascoPage {
-    position: fixed;
-    width: 100vw;
-    height: 400vh;
-    overflow-y: scroll;
-    transition: 0.8s;
-    background: linear-gradient(to top, red, orange);
-}

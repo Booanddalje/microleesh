@@ -17,31 +17,5 @@ export class brand {
         }, 500);
        
     }
-
-    page() {
-        this.bodyElem.innerHTML = `
-            <div class="tascoPage"></div>
-        `;
-    }
-
-
-    pageOff() {
-        let gg = document.querySelector('.tascoPage');
-
-        gg.style.transform = 'translateY(-300vh)';
-        this.bodyElem.classList.remove('active');
-
-        setTimeout(() => {
-            gg.remove();
-        },1000);
-
-        
-        
-        
-    }
 }
 
-/* <div class="anima">
-    <div class="first"></div>
-    <div class="last"></div>
-</div> */
