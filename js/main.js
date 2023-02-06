@@ -234,35 +234,35 @@ window.addEventListener('load', () => {
    
 
 
-    tascoPage = new brand();
+    // tascoPage = new brand();
     
-    let anima = document.querySelector('.anima');
+    // let anima = document.querySelector('.anima');
 
-    contain2.addEventListener('click', (e) => {
+    // contain2.addEventListener('click', (e) => {
           
 
-        if(e.target.classList.contains('tasco')){
-            console.log(e.target);
-            tascoPage.show();
+        // if(e.target.classList.contains('tasco')){
+        //     console.log(e.target);
+        //     tascoPage.show();
             
-            const one = setTimeout(() => {
-                document.querySelector('.first').style.backgroundColor = '#000000';
-                clearTimeout(one);
-            }, 750)
+        //     const one = setTimeout(() => {
+        //         document.querySelector('.first').style.backgroundColor = '#000000';
+        //         clearTimeout(one);
+        //     }, 750)
            
-            const two = setTimeout(() => {
-                document.querySelector('.last').style.backgroundColor = '#000000';
-                clearTimeout(two);
-            },2000);
+        //     const two = setTimeout(() => {
+        //         document.querySelector('.last').style.backgroundColor = '#000000';
+        //         clearTimeout(two);
+        //     },2000);
             
 
-            const three = setTimeout(() => {
-                console.log('2초');
-                // anima.classList.remove('active');
-                document.querySelector('.first').remove();
-                document.querySelector('.last').remove();
-                clearTimeout(three);
-            }, 2500)
+        //     const three = setTimeout(() => {
+        //         console.log('2초');
+        //         // anima.classList.remove('active');
+        //         document.querySelector('.first').remove();
+        //         document.querySelector('.last').remove();
+        //         clearTimeout(three);
+        //     }, 2500)
             
             
 
@@ -271,9 +271,9 @@ window.addEventListener('load', () => {
 
             
             
-        }// e타겟 tasco
+        // }// e타겟 tasco
 
-    });
+    // });
 
 
    

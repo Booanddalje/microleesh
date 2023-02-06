@@ -362,11 +362,11 @@ header {
     width: 299px; /* 598px */
     height: 133px;
     margin-right: 28px;
-    background: url(../img/disneysumnail.jpg) no-repeat center top;
+    background: url(../img/microleesh/disneysumnail.jpg) no-repeat center top;
     background-size:cover;
 }
 .uxui .list-container .list-box:nth-child(2) {
-    background-image: url(../img/microleesh-logo.png);
+    background-image: url(../img/microleesh/microleesh-logo.png);
 }
 .uxui .list-container .list-box div {
     position: relative;
@@ -578,11 +578,11 @@ header {
     display: inline-block; /*relative하면 연결이 안됨.*/
     width: 299px; /* 598px */
     height: 133px;
-    background: url(../img/disneysumnail.jpg) no-repeat center top;
+    background: url(../img/microleesh/disneysumnail.jpg) no-repeat center top;
     background-size:cover;
 }
 .study .list-container .list-box:nth-child(2) {
-    background-image: url(../img/microleesh-logo.png);
+    background-image: url(../img/microleesh/microleesh-logo.png);
 }
 .study .list-container .list-box div {
     position: relative;
@@ -680,11 +680,11 @@ header {
     width: 299px; /* 598px */
     height: 133px;
     margin-right: 28px;
-    background: url(../img/disneysumnail.jpg) no-repeat center top;
+    background: url(../img/microleesh/disneysumnail.jpg) no-repeat center top;
     background-size:cover;
 }
 .leesanghyeon .list-container3 .list-box:nth-child(2) {
-    background-image: url(../img/microleesh-logo.png);
+    background-image: url(../img/microleesh/microleesh-logo.png);
 }
 .leesanghyeon .list-container3 .list-box div {
     position: relative;
