@@ -264,16 +264,7 @@ window.addEventListener('load', () => {
                 clearTimeout(three);
             }, 2500)
             
-            window.addEventListener('scroll', function ggg () {
-                let tascoP = document.querySelector('.tascoPage');
-        
-                let maxScrollValue = document.body.offsetHeight - window.innerHeight;
-                let xMove = window.pageYOffset / maxScrollValue * 300 ;
-                
-                tascoP.style.transform = `translateY(${ - xMove }vh)`;
-        
-               
-            });
+            
 
 
             
